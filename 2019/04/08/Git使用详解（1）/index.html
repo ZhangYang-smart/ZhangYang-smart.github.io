@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="张杨的博客">
 <meta property="og:description" content="之前使用的版本控制工具是SVN，在朋友圈看到有个小老弟搭建了一个GitHub Pages博客，有点手痒，于是就开始研究。据了解，从事企业团队项目开发，都要涉及到版本控制系统。目前主流版本管理工具有SVN与Git。相较于SVN,Git的主要优势有：分布式部署，每个用户都可以成为版本库、无需联网，本地可提交代码、具备完善的分支体系、高性能等优点。目前大部分企业都沿用Git,因此对于Git的学习也是必然">
 <meta property="og:locale" content="PHP">
-<meta property="og:updated_time" content="2019-04-08T17:57:04.316Z">
+<meta property="og:updated_time" content="2019-04-08T18:09:27.686Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git使用详解（1）">
 <meta name="twitter:description" content="之前使用的版本控制工具是SVN，在朋友圈看到有个小老弟搭建了一个GitHub Pages博客，有点手痒，于是就开始研究。据了解，从事企业团队项目开发，都要涉及到版本控制系统。目前主流版本管理工具有SVN与Git。相较于SVN,Git的主要优势有：分布式部署，每个用户都可以成为版本库、无需联网，本地可提交代码、具备完善的分支体系、高性能等优点。目前大部分企业都沿用Git,因此对于Git的学习也是必然">
@@ -316,10 +316,12 @@
 <h2 id="Git与GitHub"><a href="#Git与GitHub" class="headerlink" title="Git与GitHub"></a>Git与GitHub</h2><h3 id="Git的使用"><a href="#Git的使用" class="headerlink" title="Git的使用"></a>Git的使用</h3><pre><code>1. 创建版本库，进入需要创建的项目文件中鼠标右键右击菜单“Git Bash Here”命令；输入“git init”项目文件生成 .git目录
 2. 提交文件到版本库，
 (1)若在项目文件夹中新增一个名为index.php的文件,更新到版本库的命令为:git add index.php  
-(2)也可使用git commit 命令，把添加的文件提交到版本库中
-</code></pre><p>Unordered Lists(<em>)
-    </em>git commit -m “首页入口文件”<br>    *配置系统的用户名、邮箱：<br>       git config –global user.name “zhangyang”<br>       git config –global user.email “<a href="mailto:228452914@qq.com" target="_blank" rel="noopener">228452914@qq.com</a>“</p>
-<pre><code>3. Git查看版本库信息
+(2)也可使用git commit 命令，把添加的文件提交到版本库中 
+   git commit -m &quot;首页入口文件&quot; 
+   配置系统的用户名、邮箱：
+   git config --global user.name &quot;zhangyang&quot;
+   git config --global user.email &quot;228452914@qq.com&quot;
+3. Git查看版本库信息
 (1)git status 及时查看项目文件的变化情况
 (2)git diff 查看本次修改内容
 (3)git commit -m &apos;增加了一行代码&apos; 对代码修改的描述
@@ -329,11 +331,14 @@
      git reset --hard HEAD~3 将文件最近三次提交回退
 </code></pre><h3 id="GitHub的使用"><a href="#GitHub的使用" class="headerlink" title="GitHub的使用"></a>GitHub的使用</h3><pre><code>1. 官网：https://github.com/
 （1）注册账号
-（2）创建ssh key:进入C:\Users\Administrator目录鼠标右击打开Git Bash
-</code></pre><p>Unordered Lists(<em>)
-    </em>执行命令：ssh-keygen -t  rsa -C  “GitHub的注册邮箱”<br>    <em>id_rsa为私钥 id_rsa.pub为公钥（可对外使用）<br>    （3）在GitHub上设置ssh密钥<br>    Unordered Lists(</em>)<br>    <em>单击右上角头像选择Setting菜单项，再选择SSH and GPG keys，单击进入密钥设置界面，单击New SSH Key按钮，进入表单 
-    </em>Title可自定义<br>    *Key为id_rsa.pub文件的密钥字符串</p>
-<pre><code>2. 与远程库关联
+（2）创建ssh key:进入C:\Users\Administrator目录鼠标右击打开Git Bash 
+     执行命令：ssh-keygen -t  rsa -C  &quot;GitHub的注册邮箱&quot;
+     id_rsa为私钥 id_rsa.pub为公钥（可对外使用）
+（3）在GitHub上设置ssh密钥 
+     单击右上角头像选择Setting菜单项，再选择SSH and GPG keys，单击进入密钥设置界面，单击New SSH Key按钮，进入表单 
+     Title可自定义
+     Key为id_rsa.pub文件的密钥字符串
+2. 与远程库关联
 git remote add origin https://github.com/ZhangYang-smart/phpshop.git
 3. 后续推送操作简化命令：
 git push -u origin master
@@ -366,7 +371,7 @@ git clone git@github.com:ZhangYang-smart/phpshop.git
         <p><span>本文标题:</span><a href="/2019/04/08/Git使用详解（1）/">Git使用详解（1）</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">张杨</a></p>
         <p><span>发布时间:</span>2019-04-08, 21:42:19</p>
-        <p><span>最后更新:</span>2019-04-09, 01:57:04</p>
+        <p><span>最后更新:</span>2019-04-09, 02:09:27</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2019/04/08/Git使用详解（1）/" title="Git使用详解（1）">http://yoursite.com/2019/04/08/Git使用详解（1）/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2019/04/08/Git使用详解（1）/　　作者: 张杨" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
