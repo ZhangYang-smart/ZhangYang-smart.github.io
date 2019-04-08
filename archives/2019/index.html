@@ -78,7 +78,9 @@
 </script>
 
 
-    <script> yiliaConfig.jquery_ui = [false]; </script>
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
 
 
 
@@ -162,7 +164,7 @@
                         
                             <li><a href="/archives/">所有文章</a></li>
                         
-                            <li><a href="/tags/">标签云</a></li>
+                            <li><a href="/tags/">随笔</a></li>
                         
                             <li><a href="/about/">关于我</a></li>
                         
@@ -171,11 +173,21 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" href="mailto:123@123.com" title="Email"></a>
+                                <a class="fa Email" href="mailto:228452914@qq.com" title="Email"></a>
                             
-                                <a class="fa GitHub" href="#" title="GitHub"></a>
+                                <a class="fa 新浪微博" href="/張楊大哥哥" title="新浪微博"></a>
+                            
+                                <a class="fa GitHub" href="/ZhangYang-master" title="GitHub"></a>
                             
                                 <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa 网易云音乐" href="/_缱绻-_-" title="网易云音乐"></a>
+                            
+                                <a class="fa bilibili" href="/天啦撸无法直视" title="bilibili"></a>
+                            
+                                <a class="fa QQ" href="/228452914" title="QQ"></a>
+                            
+                                <a class="fa 微信" href="/zy250258330" title="微信"></a>
                             
                         </ul>
                     </nav>
@@ -239,7 +251,7 @@
                 
                     <li><a href="/archives/">所有文章</a></li>
                 
-                    <li><a href="/tags/">标签云</a></li>
+                    <li><a href="/tags/">随笔</a></li>
                 
                     <li><a href="/about/">关于我</a></li>
                 
@@ -249,11 +261,21 @@
             <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
+                                <a class="fa Email" target="_blank" href="mailto:228452914@qq.com" title="Email"></a>
                             
-                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
+                                <a class="fa 新浪微博" target="_blank" href="/張楊大哥哥" title="新浪微博"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="/ZhangYang-master" title="GitHub"></a>
                             
                                 <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa 网易云音乐" target="_blank" href="/_缱绻-_-" title="网易云音乐"></a>
+                            
+                                <a class="fa bilibili" target="_blank" href="/天啦撸无法直视" title="bilibili"></a>
+                            
+                                <a class="fa QQ" target="_blank" href="/228452914" title="QQ"></a>
+                            
+                                <a class="fa 微信" target="_blank" href="/zy250258330" title="微信"></a>
                             
                         </ul>
             </nav>
@@ -307,7 +329,7 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
           <div class="article-meta">
-              <a href="/2019/04/08/hello-world/" class="archive-article-date">
+              <a href="/2019/04/08/初涉Github Pages/" class="archive-article-date">
       <time datetime="2019-04-08T13:02:11.052Z" itemprop="datePublished">04-08</time>
 </a>
 
@@ -316,7 +338,7 @@
          
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/08/hello-world/">Hello World</a>
+      <a class="archive-article-title" href="/2019/04/08/初涉Github Pages/">初涉 GitHub Pages</a>
     </h1>
   
 
@@ -342,7 +364,7 @@
         <div id="footer-info">
             <div class="footer-left">
                 <i class="fa fa-copyright"></i> 
-                2016-2019 张杨
+                2019 张杨
             </div>
             <div class="footer-right">
                 <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
@@ -403,14 +425,14 @@
     
         var oOpenInNew = {
             
-            
-            
-            
-            
-            
+             title: "a.article-title, .article-more-link a", 
+             post: ".article-entry a[href], .copyright a[href]", 
+             tags: ".article-tag a", 
+             categories: ".article-category a, a.tag-list-link", 
+             articleNav: "#article-nav a, #post-nav-button a", 
              archives: ".archive-article-title", 
              miniArchives: "a.post-list-link", 
-            
+             menu: ".header-menu a", 
              friends: "#js-friends a", 
              socail: ".social a" 
         }
